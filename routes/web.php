@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -17,6 +18,4 @@ Route::get('/sign-in', [FrontendController::class, "signIn"]);
  * API routes
  */
 
-Route::post('/api/v1/users', function () {
-	echo "Hello";
-});
+Route::post('/api/v1/users', [UsersController::class, "signUp"]);
