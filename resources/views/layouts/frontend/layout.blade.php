@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    Frontend
+    @include("layouts.frontend.components.header")
+    @yield("content")
+    @include("layouts.frontend.components.footer")
+
+
 </body>
 </html>
